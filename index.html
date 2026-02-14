@@ -207,6 +207,7 @@ Aku berharap kita bukan hanya sementara, tapi selamanyaa sayangg❤️
 </div>
 
 <script>
+<script>
 /* Musik */
 let musicList = [
   "https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3",
@@ -215,21 +216,30 @@ let musicList = [
 
 let currentMusic = 0;
 let music = document.getElementById("bgMusic");
-
-// set lagu pertama saat halaman dibuka
-music.src = musicList[currentMusic];
+let isLoaded = false;
 
 function toggleMusic() {
-  if (music.paused) music.play();
-  else music.pause();
+  // pertama kali klik → load lagu
+  if (!isLoaded) {
+    music.src = musicList[currentMusic];
+    music.load();
+    isLoaded = true;
+  }
+
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
 }
 
 function changeMusic() {
   currentMusic = (currentMusic + 1) % musicList.length;
   music.src = musicList[currentMusic];
-  music.load();   // penting!
+  music.load();
   music.play();
 }
+</script>
 
 /* WhatsApp */
 function kirimWA() {
@@ -257,4 +267,5 @@ setInterval(() => {
 
 </body>
 </html>
+
 
