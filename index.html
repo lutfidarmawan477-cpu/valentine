@@ -130,42 +130,6 @@ button:hover {
   from { transform: translateY(100vh) scale(1); opacity: 1; }
   to { transform: translateY(-10vh) scale(1.5); opacity: 0; }
 }
-
-.heart {
-  position: fixed;
-  color: #ff4d6d;
-  animation: float 5s linear infinite;
-  z-index: 9999;
-  pointer-events: none;
-  user-select: none;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(110vh) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-20vh) scale(1.5);
-    opacity: 0;
-  }
-}
-
-/* Patch agar hati pasti terlihat */
-.heart {
-  position: fixed;
-  color: #ff4d6d;
-  z-index: 9999;
-  pointer-events: none;
-  user-select: none;
-  will-change: transform, opacity;
-}
-
-.heart {
-  pointer-events: none;
-  user-select: none;
-}
-
 </style>
 </head>
 
@@ -179,7 +143,7 @@ button:hover {
 <!-- Musik -->
 <div class="music-control">
   <audio id="bgMusic" loop>
-    <source src="https://faithful-bronze-sui8saqkgt.edgeone.app/lagu.mp3" type="audio/mpeg">
+    <source src="https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3" type="audio/mpeg">
     <source src="https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3" type="audio/mpeg">
   </audio>
   <button onclick="toggleMusic()">🎵 Play / Pause</button>
@@ -247,7 +211,7 @@ Aku berharap kita bukan hanya sementara, tapi selamanyaa sayangg❤️
 
 <script>
 /* Musik */
-let musicList = ["https://faithful-bronze-sui8saqkgt.edgeone.app/lagu.mp3", "https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3"];
+let musicList = ["https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3", "https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3"];
 let currentMusic = 0;
 let music = document.getElementById("bgMusic");
 
@@ -266,48 +230,25 @@ function changeMusic() {
 function kirimWA() {
   let nomorWA = "628989110355"; // Ganti dengan nomor kamu
   let pesan = encodeURIComponent(
-    "Hai sayangkuu❤️\n\nAda yang mau kamu sampaikan?\n"
+    "Hai sayang ❤️\n\nAda sesuatu yang ingin aku sampaikan...\n"
   );
 
   let url = "https://wa.me/" + nomorWA + "?text=" + pesan;
   window.open(url, "_blank");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setInterval(() => {
-    const heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerHTML = "❤️";
+/* Animasi hati */
+setInterval(() => {
+  let heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 20 + 20 + "px";
+  document.body.appendChild(heart);
 
-    heart.style.left = Math.random() * window.innerWidth + "px";
-    heart.style.top = window.innerHeight + "px";
-    heart.style.fontSize = Math.random() * 20 + 20 + "px";
-    heart.style.position = "fixed";
-    heart.style.zIndex = "9999";
-
-    document.body.appendChild(heart);
-
-    let pos = window.innerHeight;
-    let opacity = 1;
-
-    const float = setInterval(() => {
-      pos -= 2;
-      opacity -= 0.01;
-
-      heart.style.top = pos + "px";
-      heart.style.opacity = opacity;
-
-      if (opacity <= 0) {
-        clearInterval(float);
-        heart.remove();
-      }
-    }, 16);
-  }, 400);
-});
-
+  setTimeout(() => heart.remove(), 5000);
+}, 500);
 </script>
 
 </body>
-
 </html>
-
