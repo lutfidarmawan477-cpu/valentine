@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️Happy Valentine Day Sayangku❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ffe6eb, #fff);
+  color: #444;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 2s ease;
+}
+
+h1 {
+  color: #e91e63;
+  font-size: 2.5em;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #e91e63;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.container {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+  animation: slideUp 1s ease;
+}
+
+.container.left { left: 0; }
+.container.right { left: 50%; }
+
+.content {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Kolam Surat */
+.letter-box {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 2s ease;
+}
+
+.letter-content {
+  white-space: pre-line;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #555;
+  border: 1px solid #ffd6e0;
+}
+
+/* Musik */
+.music-control {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Tombol */
+button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(40px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+/* Hati animasi */
+.heart {
+  position: fixed;
+  color: #ff4d6d;
+  animation: float 5s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh) scale(1); opacity: 1; }
+  to { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
+
+.heart {
+  position: fixed;
+  color: #ff4d6d;
+  animation: float 5s linear infinite;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(110vh) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Patch agar hati pasti terlihat */
+.heart {
+  position: fixed;
+  color: #ff4d6d;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform, opacity;
+}
+
+.heart {
+  pointer-events: none;
+  user-select: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>❤️Happy Valentine Day Sayangku Cinta❤️</h1>
+  <p>Kenangan kecil yang jadi cerita besar untuk kita</p>
+</header>
+
+<!-- Musik -->
+<div class="music-control">
+  <audio id="bgMusic" loop>
+    <source src="https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3" type="audio/mpeg">
+    <source src="https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="toggleMusic()">🎵 Play / Pause</button>
+  <button onclick="changeMusic()">🔁 Ganti Lagu</button>
+</div>
+
+<!-- Timeline Foto -->
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <img src="https://image2url.com/r2/default/images/1771060848165-af23df05-6a36-4a7a-8946-bd74ab7bc0c6.jpeg" alt="gambar" loading="lazy" />
+      <p>First Time Kitaa Sayang🤭</p>
+      <p>Jujur waktu itu aku gak sangka kita bisa sampe ketemu, 
+        karena akuu kira kita hanya akan seperti cerita orang" yang cuma virtual doang lohh🥺</p> 
+      <p>TAPII KITAA SAMA" PUNYA KEINGINAN UNTUK BISA KETEMUU. 
+        SENENGG BANGETTT SAYANGGG KITA BISA KETEMU AKHIRNYAA😖</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <img src="https://image2url.com/r2/default/images/1771061033770-bd4f346c-f233-47b8-8dc4-de6739e12768.jpeg" alt="gambar" loading="lazy" />
+      <p>Moment KIta Mukbang😹</p>
+      <p>WHAHAHAHA INI KITA SAMA" KEKENYANGAN😭 LAGIANN SIH YAA ANEHH 
+        UDAH TAU MAU MAKAN SUSHI MALAH PESEN NASI MANA KITA SAMA" PESEN NASI LAGI AHAHAHA😭</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <img src="https://image2url.com/r2/default/images/1771061101294-be35fbd5-55d9-4b86-aa3e-f872a8d3fc07.jpeg" alt="gambar" loading="lazy" />
+      <p>Ini Sih Paling Absurd😆</p>
+      <p>HAMPIR MAU DI USIRR ANJAYYY SAKING LAMA NYA KITA😭
+         MEREKA GATAUU APAA AKUU MAUUU LEBIHH LAMAAAA SAMA ISTRI AKUUU😡 
+         TAPI YANG INI PALINGGGG AKU SENENGGG, SEDERHANA TAPII SEDIKIT CUKUP
+         UNTUK MELEPASKAN RASA KANGEN KITA BERDUAA😘
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Kolam Surat (Tidak Bisa Diketik) -->
+<div class="letter-box">
+  <h2>💌Hi, Arifah Istrikuu Sayangg👀</h2>
+  <div class="letter-content">
+Happy Valentine Sayanggkuu🫶,
+
+Maaf yahh hanya ini bisa akuu kasih untuk kamuu🥹 Awal nya akuu pengennn bangett kasih hadiah untuk Valentine kitaa, tapi aku selalu nunggu jawaban darii kamuu duluu, "kita jadii gak yahh ketemuu, soalnya kalo akuu beli duluan nantii takutnya malah gak jadii terus nantii buat siapaa hadiah nya😓" Tapi semoga ini bisa membalaskan rasa maaf akuu ke kamuu sayanggg😙, sekali lagii maaf yaa hanya bisa ini yang aku bisa kasih ke kamu😣
+
+Terima kasih sayanggkuu sudah hadir di hari-hari akuu dan menjadi bagian dari setiap cerita kecil yang kita lalui bersama💕
+
+Semoga kita terus bersama, saling melengkapi, dalam tawa, dalam harapan, dan dalam cinta❤️‍🩹🤲
+
+Aku berharap kita bukan hanya sementara, tapi selamanyaa sayangg❤️
+
+~from PILL, yang selalu sayangg sama kamuu😘🫶
+  </div>
+</div>
+
+<!-- Tombol WhatsApp -->
+<div style="text-align:center; margin-top:50px;">
+  <h2>Ada yang mau kamu bales sayang?💬</h2>
+  <button onclick="kirimWA()">Kirim ke sini❤️</button>
+</div>
+
+<script>
+/* Musik */
+let musicList = ["https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3", "https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3"];
+let currentMusic = 0;
+let music = document.getElementById("bgMusic");
+
+function toggleMusic() {
+  if (music.paused) music.play();
+  else music.pause();
+}
+
+function changeMusic() {
+  currentMusic = (currentMusic + 1) % musicList.length;
+  music.src = musicList[currentMusic];
+  music.play();
+}
+
+/* WhatsApp */
+function kirimWA() {
+  let nomorWA = "628989110355"; // Ganti dengan nomor kamu
+  let pesan = encodeURIComponent(
+    "Hai sayang ❤️\n\nAda sesuatu yang ingin aku sampaikan...\n"
+  );
+
+  let url = "https://wa.me/" + nomorWA + "?text=" + pesan;
+  window.open(url, "_blank");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.top = window.innerHeight + "px";
+    heart.style.fontSize = Math.random() * 20 + 20 + "px";
+    heart.style.position = "fixed";
+    heart.style.zIndex = "9999";
+
+    document.body.appendChild(heart);
+
+    let pos = window.innerHeight;
+    let opacity = 1;
+
+    const float = setInterval(() => {
+      pos -= 2;
+      opacity -= 0.01;
+
+      heart.style.top = pos + "px";
+      heart.style.opacity = opacity;
+
+      if (opacity <= 0) {
+        clearInterval(float);
+        heart.remove();
+      }
+    }, 16);
+  }, 400);
+});
+
+</script>
+
+</body>
+</html>
