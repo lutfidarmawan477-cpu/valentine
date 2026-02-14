@@ -142,7 +142,10 @@ button:hover {
 
 <!-- Musik -->
 <div class="music-control">
-  <audio id="bgMusic" loop></audio>
+  <audio id="bgMusic" loop>
+    <source src="https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3" type="audio/mpeg">
+    <source src="https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3" type="audio/mpeg">
+  </audio>
   <button onclick="toggleMusic()">🎵 Play / Pause</button>
   <button onclick="changeMusic()">🔁 Ganti Lagu</button>
 </div>
@@ -208,34 +211,18 @@ Aku berharap kita bukan hanya sementara, tapi selamanyaa sayangg❤️
 
 <script>
 /* Musik */
-let musicList = [
-  "https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3",
-  "https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3"
-];
-
+let musicList = ["https://flaky-magenta-euf5vopfbf.edgeone.app/lagu.mp3", "https://considerable-orange-em7qesrfyu.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3"];
 let currentMusic = 0;
 let music = document.getElementById("bgMusic");
-let isLoaded = false;
 
 function toggleMusic() {
-  // pertama kali klik → load lagu
-  if (!isLoaded) {
-    music.src = musicList[currentMusic];
-    music.load();
-    isLoaded = true;
-  }
-
-  if (music.paused) {
-    music.play();
-  } else {
-    music.pause();
-  }
+  if (music.paused) music.play();
+  else music.pause();
 }
 
 function changeMusic() {
   currentMusic = (currentMusic + 1) % musicList.length;
   music.src = musicList[currentMusic];
-  music.load();
   music.play();
 }
 
@@ -265,6 +252,3 @@ setInterval(() => {
 
 </body>
 </html>
-
-
-
