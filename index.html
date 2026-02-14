@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>❤️Happy Valentine Day Sayangku❤️</title>
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #ffe6eb, #fff);
   color: #444;
   overflow-x: hidden;
@@ -23,6 +26,12 @@ header {
 h1 {
   color: #e91e63;
   font-size: 2.5em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 .timeline {
@@ -60,6 +69,10 @@ h1 {
   text-align: center;
 }
 
+.content p {
+  font-family: 'Poppins', sans-serif;
+}
+
 .content img {
   width: 100%;
   border-radius: 10px;
@@ -85,6 +98,8 @@ h1 {
   line-height: 1.6;
   color: #555;
   border: 1px solid #ffd6e0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
 }
 
 /* Musik */
@@ -156,61 +171,22 @@ button:hover {
     <div class="content">
       <img src="https://image2url.com/r2/default/images/1771060848165-af23df05-6a36-4a7a-8946-bd74ab7bc0c6.jpeg" alt="gambar" loading="lazy" />
       <p>First Time Kitaa Sayang🤭</p>
-      <p>Jujur waktu itu aku gak sangka kita bisa sampe ketemu, 
-        karena akuu kira kita hanya akan seperti cerita orang" yang cuma virtual doang lohh🥺</p> 
-      <p>TAPII KITAA SAMA" PUNYA KEINGINAN UNTUK BISA KETEMUU. 
-        SENENGG BANGETTT SAYANGGG KITA BISA KETEMU AKHIRNYAA😖</p>
-    </div>
-  </div>
-
-  <div class="container right">
-    <div class="content">
-      <img src="https://image2url.com/r2/default/images/1771061033770-bd4f346c-f233-47b8-8dc4-de6739e12768.jpeg" alt="gambar" loading="lazy" />
-      <p>Moment KIta Mukbang😹</p>
-      <p>WHAHAHAHA INI KITA SAMA" KEKENYANGAN😭 LAGIANN SIH YAA ANEHH 
-        UDAH TAU MAU MAKAN SUSHI MALAH PESEN NASI MANA KITA SAMA" PESEN NASI LAGI AHAHAHA😭</p>
-    </div>
-  </div>
-
-  <div class="container left">
-    <div class="content">
-      <img src="https://image2url.com/r2/default/images/1771061101294-be35fbd5-55d9-4b86-aa3e-f872a8d3fc07.jpeg" alt="gambar" loading="lazy" />
-      <p>Ini Sih Paling Absurd😆</p>
-      <p>HAMPIR MAU DI USIRR ANJAYYY SAKING LAMA NYA KITA😭
-         MEREKA GATAUU APAA AKUU MAUUU LEBIHH LAMAAAA SAMA ISTRI AKUUU😡 
-         TAPI YANG INI PALINGGGG AKU SENENGGG, SEDERHANA TAPII SEDIKIT CUKUP
-         UNTUK MELEPASKAN RASA KANGEN KITA BERDUAA😘
-      </p>
+      <p>Jujur waktu itu aku gak sangka kita bisa sampe ketemu...</p> 
     </div>
   </div>
 </div>
 
-<!-- Kolam Surat (Tidak Bisa Diketik) -->
+<!-- Kolam Surat -->
 <div class="letter-box">
   <h2>💌Hi, Arifah Istrikuu Sayangg👀</h2>
   <div class="letter-content">
 Happy Valentine Sayanggkuu🫶,
-
-Maaf yahh hanya ini bisa akuu kasih untuk kamuu🥹 Awal nya akuu pengennn bangett kasih hadiah untuk Valentine kitaa, tapi aku selalu nunggu jawaban darii kamuu duluu, "kita jadii gak yahh ketemuu, soalnya kalo akuu beli duluan nantii takutnya malah gak jadii terus nantii buat siapaa hadiah nya😓" Tapi semoga ini bisa membalaskan rasa maaf akuu ke kamuu sayanggg😙, sekali lagii maaf yaa hanya bisa ini yang aku bisa kasih ke kamu😣
-
-Terima kasih sayanggkuu sudah hadir di hari-hari akuu dan menjadi bagian dari setiap cerita kecil yang kita lalui bersama💕
-
-Semoga kita terus bersama, saling melengkapi, dalam tawa, dalam harapan, dan dalam cinta❤️‍🩹🤲
-
-Aku berharap kita bukan hanya sementara, tapi selamanyaa sayangg❤️
-
-~from PILL, yang selalu sayangg sama kamuu😘🫶
+Terima kasih sudah hadir di hari-hari akuu💕
+~from PILL
   </div>
 </div>
 
-<!-- Tombol WhatsApp -->
-<div style="text-align:center; margin-top:50px;">
-  <h2>Ada yang mau kamu bales sayang? 💬</h2>
-  <button onclick="kirimWA()">Kirim ke sini❤️</button>
-</div>
-
 <script>
-/* Musik */
 let musicList = ["https://closed-coffee-i90lwunkdg.edgeone.app/lagu.mp3", "https://aggressive-blue-ypuyohwrzi.edgeone.app/Nadhif%20Basalamah%20-%20bergema%20sampai%20selamanya%20(Official%20Lyric%20Video).mp3"];
 let currentMusic = 0;
 let music = document.getElementById("bgMusic");
@@ -226,17 +202,6 @@ function changeMusic() {
   music.play();
 }
 
-/* WhatsApp */
-function kirimWA() {
-  let nomorWA = "628989110355"; // Ganti dengan nomor kamu
-  let pesan = encodeURIComponent(
-    "Hai sayanggg❤️\n\nAda yang mau kamu bales?\n"
-  );
-
-  let url = "https://wa.me/" + nomorWA + "?text=" + pesan;
-  window.open(url, "_blank");
-}
-
 /* Animasi hati */
 setInterval(() => {
   let heart = document.createElement("div");
@@ -245,7 +210,6 @@ setInterval(() => {
   heart.style.left = Math.random() * 100 + "vw";
   heart.style.fontSize = Math.random() * 20 + 20 + "px";
   document.body.appendChild(heart);
-
   setTimeout(() => heart.remove(), 5000);
 }, 500);
 </script>
